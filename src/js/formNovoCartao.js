@@ -1,4 +1,6 @@
 ;(function(){
+    
+    'use strict';
 
     const form = document.querySelector('.formNovoCartao');
 
@@ -24,7 +26,8 @@
         else {
 
             let objeto = {
-                conteudo: textarea.value 
+                conteudo: textarea.value,
+                cor: '#EBEF40'
             }
 
             criarCartao(objeto);

@@ -1,0 +1,33 @@
+{
+  "name": "ceep",
+  "version": "1.0.0",
+  "description": "Ceep é um gerenciador de tarefas com js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/babel src --out-dir dist --copy-files --watch --presets @babel/preset-env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaelumAulas/web8253.git"
+  },
+  "keywords": [
+    "postit",
+    "tasks",
+    "tarefas"
+  ],
+  "author": "Vanessa Tonini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaelumAulas/web8253/issues"
+  },
+  "homepage": "https://github.com/CaelumAulas/web8253#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
+}

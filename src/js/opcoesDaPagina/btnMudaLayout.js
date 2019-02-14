@@ -1,5 +1,7 @@
 ;(function(){
 
+    'use strict';
+
     const btn = document.querySelector('#btnMudaLayout');
     const mural = document.querySelector('.mural');
     

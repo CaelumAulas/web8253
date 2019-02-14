@@ -1,5 +1,7 @@
 ;(function(){
 
+    'use strict';
+
     const btnAjuda = document.querySelector('#btnAjuda');
 
     btnAjuda.addEventListener('click', function(evento){
@@ -19,13 +21,22 @@
             }
         ]
 
-        //for of
-        for(let objAjuda of listaAjudas){
+        const ajax = new XMLHttpRequest()
+
+        ajax.open('GET', 'http://ceep.herokuapp.com/cartoes/instrucoes');
+
+        ajax.responseType = 'json';
+
+        ajax.send();
+
+        ajax.addEventListener('load',function(){
             
-            criarCartao(objAjuda)
-            
-        }
-        
+            listaAjudas = ajax.response.instrucoes
+            //for of
+            for(let objAjuda of listaAjudas){
+                criarCartao(objAjuda)
+            }
+        })
         
     })
 

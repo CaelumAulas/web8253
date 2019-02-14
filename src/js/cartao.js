@@ -4,7 +4,7 @@
     'use strict';
 
     let numeroCartao = 1;
-    
+
     window.criarCartao = function (objetoCartao) {
     
         const cartao = document.createElement('article');
